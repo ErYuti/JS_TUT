@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        //strings store and manupulate text
+        let name='yuti';
+        let name1="yuti";
+        console.log(name);
+        console.log(name1);
+        //type od string
+        console.log(typeof(name));
+        //length od string
+        console.log(name.length);
+        //single charater
+        console.log(name[0]);
+        console.log(name[1]);
+        //template literals -""/'' also used
+        let n=`"yuti's"`;
+        console.log(n);
+        //to add two strings
+        let fr='yuti';
+        let fr1='jaee';
+        console.log(`${fr} is the friend ${fr1}`);
+
+        //escape squence character
+        //\n other line
+        //\t tab
+        //\r carring return
+        let a=`yuti \n meher`;
+        console.log(a);
+        //properties and method
+        let b='yuti meher'
+        console.log(b.toUpperCase());
+        console.log(b.toLowerCase());
+        //slice
+        console.log(b.slice(2,4));
+        console.log(b.slice(2));
+        //replace
+        let c=b.replace("yuti", "meher");
+        console.log(c);
+    </script>
+</body>
+</html>

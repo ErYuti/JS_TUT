@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Basic</title>
+</head>
+<body>
+    <h1>Yuti</h1>
+    <script>
+        //selection of an element
+        var a = document.querySelector("h1")
+        console.log(a);
+
+        // changing HTML 
+        a.innerHTML= "changinng yuti "
+
+        //chaning css
+        a.style.color="red"
+
+        //event listener
+        a.addEventListener("click",function(){
+            console.log("hey")
+            a.innerHTML="changinning to jaee";
+            a.style.color="yellow";
+            a.style.backgroundColor="black";
+        })
+    </script>
+</body>
+</html>

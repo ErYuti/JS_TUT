@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Adjacent</title>
+</head>
+<body>
+    <div id="first">Hey I am first</div>
+    <script>
+        //insetAdjacent
+        first.insertAdjacentHTML ('beforeend' , '<div class="test">beforeend   test</div>')
+
+        first.insertAdjacentHTML ('beforebegin' , '<div class="test">before begin</div>')
+
+        first.insertAdjacentHTML ('afterbegin' , '<div class="test">after begin</div>')
+
+        first.insertAdjacentHTML ('afterend' , '<div class="test">after end</div>')
+    </script>
+</body>
+</html>

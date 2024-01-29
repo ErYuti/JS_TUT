@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Filter</title>
+</head>
+<body>
+    <script>
+        //filter
+
+        var arr =[1,2,3,4,5,6,7,8,9,10];
+
+        var ans =arr.filter(function(val){
+            if(val%2 === 0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        })
+        console.log(ans);
+
+        //remove a letter name in array
+        var arry = ['yuti', 'meher' ,'deep', 'naresh', 'avish', 'baba'];
+        var result = arry.filter(function(val){
+            return !val.includes("a");
+        })
+        console.log(result);
+
+        //remove more than 2a name n array
+
+        var arry = ['yuti', 'aandha','prapti','naresh','mansiha','jaee']
+
+        var n = arry.filter(function(val){
+            if(val.split("a").length<=2){
+                return true
+            }else{return false}
+        })
+        console.log(n);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut</title>
+</head>
+<body>
+    
+    <script>
+        document.write('hello');
+        //after 5s  alert works
+        // let a = setTimeout(function(){
+        //     alert('I am inside time out');
+        // },5000);
+        // let b = prompt("Do ypu want to run the settimeout")
+        // if ("n" == b){
+        //     //clear 
+        // clearTimeout(a);
+        // }
+        // console.log(a);
+
+
+        //function + settimeout and agrument
+       function sum (a,b){
+            console.log('i am runnning'+ 'a+b');
+           return  a+b;
+        } 
+        setTimeout(sum, 2000 ,1,2)
+    </script>
+</body>
+</html>

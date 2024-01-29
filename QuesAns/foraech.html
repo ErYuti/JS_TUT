@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foreachQues</title>
+</head>
+
+<body>
+    <script>
+        //array- foreach map filter
+        //array
+        var a = [1, 2, 3, 4];
+        //acess
+        a[3];
+        //for-each
+        a.forEach(function (val) {
+            //add 2 every array index
+            console.log(val + 2)
+        })
+
+        // Q1: using for each function add hello in every member in array
+        var array = [10, 20, 30, 40, 50];
+        array.forEach(function (add) {
+            console.log("hello," + add)
+        })
+
+        // Q2:print every member of array and print less than 30 value
+        array.forEach(function (val) {
+            if (val <= 30) {
+                console.log(val);
+            }
+        })
+
+        //Q3:print every member of array and add sum it
+        var sum = 0;
+        a.forEach(function (val) {
+            sum = sum + val;
+            console.log(sum);
+        })
+
+        //Q4:print every member of array and add every member when anyone is string skip it
+        var arr = [1, 2, 3, 'yuti', 4, '5'];
+        var adding = 0;
+        arr.forEach(function (val) {
+            if (typeof val === "number") {
+                adding = adding + val;
+                console.log(adding);
+            }
+        })
+
+        
+    </script>
+</body>
+
+</html>

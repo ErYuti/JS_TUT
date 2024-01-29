@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches,Closest and Conatin</title>
+</head>
+<body>
+    <div class="box" id="id1">this is elment 1<span id="sp1">hello</span></div>
+    <div class="box" id="id2">this is elment 1</div>
+    <script>
+        let id1 =document.getElementById("id1")
+        let sp1 =document.getElementById("sp1")
+        console.log(id1);
+        //matches
+        console.log(id1.matches(".class"))
+        console.log(id1.matches(".box"))
+        //contain
+        console.log(id1.contains(sp1))
+        console.log(sp1.contains(sp1))
+        console.log(sp1.contains(id1))
+        //closest
+        console.log(sp1.closest("#sp1"))
+        console.log(sp1.closest(".box"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-in</title>
+</head>
+<body>
+    <script>
+        //for- in
+        let objMarks={
+            //key:yuti, value :90
+            yuti:90,
+            jaee:78,
+            gauri:88,
+            deep:76
+        }
+        for(let key in objMarks){
+            console.log(key); //only for key 
+            console.log("Marks of " + key + " are : " + objMarks[key]);//key + value
+        }
+    </script>
+</body>
+</html>

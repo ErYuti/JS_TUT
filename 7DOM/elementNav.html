@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element only Navigation</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Hire</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p>i am a good girls</p>
+    </div>
+    <script>
+        let b = document.body;
+        //any child 
+        console.log(b.firstChild)
+        //only element child
+        console.log(b.firstElementChild)
+        console.log(b.previousElementSibling)
+        console.log(b.nextElementSibling)
+
+        const change =()=>{
+            document.body.firstElementChild.style.backgroundColor ='red';
+        }
+        console.log(change())
+    </script>
+</body>
+</html>

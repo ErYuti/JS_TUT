@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parents & siblings of an element</title>
+</head>
+<body><div class="main"><h1>Yuti Meher</h1>
+        <p>i am a girl</p>
+        <img src="" alt="">
+    </div>
+    <div class="frist"></div>
+    <script>
+        //html is parent 
+        //head and body is sibling of html
+        console.log(document.parentNode);
+        console.log(document.body.parentNode);
+        var a= console.log(document.body.secondChild);
+        // console.log(a.parentNode);
+        // console.log(a.parentElement);
+        console.log(a.firstChild.nextSibling);
+    </script>
+</body>
+</html>

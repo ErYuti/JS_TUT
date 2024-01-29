@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script> 
+    //function
+    //particulr task to excuted anytime/resused /with diff data
+    // parameter a,b
+    // agrument- value any
+    //invocation - where to run the code== add(2,3)
+
+    function add(a,b){
+        return a+b;
+    }
+    let result = add(1,2);
+    console.log(result);
+    //diff data
+    console.log(add(3,4));
+    console.log(add(90,89))
+    console.log(add(770,789))
+
+    //Average
+    function avg (x,y){
+        return  1*(x+y)/2;
+    }
+    console.log(avg(1,2));
+    console.log(avg(3,6));
+
+
+
+    // arrow function
+    const sum=(a,b) =>{
+        let c= a+b;
+        return c;
+    }
+    let rel =sum(1,33)
+    console.log(rel);
+
+    //without parameter & agrument and return
+    const hello = () => {
+        console.log('Hey how are you!')
+    }
+    hello()
+    hello()
+    hello()
+
+    //with agrument
+    const done= ()=>{
+        return'Hiiii';
+    }
+    console.log(done())
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Map</title>
+</head>
+<body>
+    <script>
+        //array - map filter
+       var arr=[1,2,3,4,5]
+
+      var ans= arr.map(function(val){
+        return "hello";
+       })
+       console.log(ans);
+
+
+       //write array and make into new array if the value is grether than 5 take in p tag or else in span tag
+       var array = ["hello","a","yuti","mehertyu","monokoshum"]
+
+       var result =array.map(function(val){
+        if(val.length == 5) {
+            return `<p>${val}</p>`
+        }
+        else{
+            return`<span>${val}</span>`
+        }
+       })
+       console.log(result);
+
+       //write array of object and make new array that only have name is that new array
+
+       var arry =[
+        {name:'yuti',id:234,age:23},
+        {name:'jaee',id:456,age:32},
+        {name:'gauri',id:2345,age:21},
+        {name:'deep',id:2900,age:14}
+       ];
+
+       var arry2 = arry.map(function(value){
+        return value.name;
+        // return value.age;
+       })
+       console.log(arry2);
+
+
+    </script>
+</body>
+</html>

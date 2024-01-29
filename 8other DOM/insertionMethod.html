@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Method</title>
+</head>
+<body>
+    i am start of this container (outer)
+    <div class="container">
+        i am start of this container (inner)
+        <p id="id">
+            this is an insertion process
+        </p>
+        i am end of this container (inner)
+    </div>
+    i am last of this container (outer)
+    <script>
+        // 1st method
+       let a = document.getElementsByTagName("div")[0]
+    //    a.innerHTML = a.innerHTML + '<h1>hello world</h1>';
+
+    //2nd method
+    let div = document.createElement('div');
+    div.innerHTML = '<h1>hello world</h1>';
+    // a.appendChild(div);
+    // a.prepend(div);
+    // a.before(div);
+    // a.after(div);
+    a.replaceWith(div);
+    </script>
+</body>
+</html>

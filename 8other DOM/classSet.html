@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .text{
+            color: black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class SET-List</title>
+</head>
+<body>
+    <div id="first" class="yellow text">
+        <span>hey i am good</span>
+    </div>
+    <script>
+        let a = document.getElementById("first")
+        a.className = "text red";
+        console.log(a.classList);
+        a.classList.add('yellow')
+    </script>
+</body>
+</html>

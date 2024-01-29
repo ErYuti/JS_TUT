@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrcsSet3</title>
+</head>
+<body>
+    <script>
+        //Q1
+        let marks={
+            yuti:98,
+            jaee:67,
+            aakash:7
+        }
+        for(let i=0; i<Object.keys(marks).length; i++){
+            console.log('The marks of ' + Object.keys(marks)[i].length
+            + " are " + marks[Object.keys(marks)[i]])
+        }
+
+        //Q2
+        for(let key in marks){
+            console.log(key);
+            console.log("The marks of "+ key + " are " + marks[key])
+        }
+
+        //Q3
+
+        let cn=3;
+        let i;
+        while(i!=cn){
+            i=prompt('enter a number');
+            console.log('try again!!')
+
+        }
+        console.log('yess 4 is correct number');
+
+        //Q4
+        let mean=(a,b,c,d,e)=>{
+            return(a+b+c+d+e)/5
+        }
+        let result=mean(1,2,3,4,5)
+        console.log(result);
+
+    </script>
+</body>
+</html>

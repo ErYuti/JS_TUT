@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1-Q4</title>
+</head>
+
+<body>
+    <script>
+        // Q1: write a js function to check whether an input is an array or not
+        function checkArray(inp) {
+            return Array.isArray(inp);
+            // inp instanceof Array;
+        }
+        console.log(checkArray(1));
+        console.log(checkArray({}));
+        console.log(checkArray([1, 2, 3]));
+
+        //Q2: write a js function to clone an arry. 
+        function cloning(ipt){
+            var arr = [...ipt]
+            return arr;
+        }
+        console.log(([1,2,3,[5,6]]));
+
+        //Q3: Write a js function to get the first element of an array.passinga parameter 'n' will return the first 'n' element of the array.
+        function getter (inpt, n=1){
+            var result=[];
+            for(var i=0; i<n; i++)
+            result.push (inpt[i])
+            return result
+        }
+        console.log(getter([1,2,3,4]));
+        console.log(getter([1,2,3,4],3));
+
+        // Q4: wajs to join all elements of following array into a string
+        function joiner(ele) {
+            return ele.join("+");
+        }
+        console.log(joiner(["yuti",2,"jaee","gargi",true]))
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+<body>
+    <script>
+        //for loop
+        //initializing is excuted one time
+        // condition based on loops runs 
+        //increament everytime the loop body is executed
+        let a=prompt('enter your number for print value:')
+        a = Number.parseInt (a);
+        for(let i=0; i<=a; i++){
+            console.log(i);
+        }
+
+        //program to add first n natural number
+
+        let sum = 0;
+        let n=prompt('enter your number for sum natural number:')
+        n = Number.parseInt (n);
+        for(let i=0; i<n; i++){
+            sum += (i+1);
+        }
+        console.log("sum of first " + n + " natural number is:" + sum);
+
+        //create a loop that print 1 t0 10 numbers
+        let num=10;
+        for(let i=1; i<=num; i++){
+            console.log("1 to 10 numbers:"+ i);
+        }
+
+        //create a loop that printing a multiplication table for a given number
+        let number=prompt("Enter a Number:");
+        number= Number.parseInt(number);
+        for(let i=1; i<=10; i++){
+            var result=i*number;
+            console.log(number +" * "+ i + " = " + result);
+        }
+
+    
+    </script>
+</body>
+</html>

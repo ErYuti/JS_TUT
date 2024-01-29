@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PracSet2</title>
+</head>
+<body>
+    <script>
+        //Q1
+        let age = prompt('what is your age:')
+        if(age >10 && age<=20){
+            console.log('you are age is between 10 to 20');
+        }
+        else{
+            console.log('your age is doest not lie between 10 to 20');
+        }
+
+        //Q2
+        let a = prompt('what is your age:')
+        switch(a){
+            case 12:
+                console.log('your age is 12');
+            break;
+            case 13:
+                console.log('your age is 13');
+            break;
+            case 14:
+                console.log('your age is 14');
+            break;
+            default:
+                console.log('your age is not special')
+        }
+
+        //Q3
+        let num=prompt('enter a number:');
+        num=Number.parseInt(num);
+        if(num%2==0 && num%3==0){
+            console.log('your number is divisible by 2 & 3');
+        }
+        else{
+            console.log('your no is not divisible ny 2 & 3')
+        }
+
+        //Q4
+        let n=prompt('enter a number:');
+        n=Number.parseInt(n);
+        if(n%2==0 || n%3==0){
+            console.log('your number is divisible by 2 & 3');
+        }
+        else{
+            console.log('your no is not divisible ny 2 & 3')
+        }
+
+        //Q5
+        let YourAge=prompt('enter your age:');
+        let m = YourAge>18? "You can drive":"You cannat drive";
+        console.log(m)
+    </script>
+</body>
+</html>

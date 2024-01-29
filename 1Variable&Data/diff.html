@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let var const</title>
+</head>
+<body>
+    <script>
+        var a=45;
+        var b ="yuti";
+        var c=null;
+        var d= undefined;
+        //function scoped-globally
+        {
+            var b= "this";
+            console.log(b);
+        }
+        //and updating data is print
+        console.log(b);
+
+        //let is block scope
+        let m='yuti';
+        {
+            let a='meher';
+            console.log(a);
+        }
+        //only block scope is work for block inside block befor variable work
+        console.log(m);
+
+        //constant
+        const pi=3.14;
+        // pi=45; cant change the value of variable
+        console.log(pi)
+    </script>
+</body>
+</html>
