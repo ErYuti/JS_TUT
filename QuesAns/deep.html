@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Copy</title>
+</head>
+
+<body>
+    <script>
+        const List = ["noodles", { list: ["eggs", "flour", "water"] }];
+        console.log(List);
+        const ListDeepCopy = JSON.parse(JSON.stringify(List));
+        console.log(ListDeepCopy);
+
+        // Change the value of the 'list' property in ingredientsListDeepCopy.
+        ListDeepCopy[1].list = ["rice flour", "water"];
+        // The 'list' property does not change in ingredients_list.
+        console.log(List[1].list);
+        console.log(ListDeepCopy);
+        // Array(3) [ "eggs", "flour", "water" ]
+    </script>
+</body>
+
+</html>

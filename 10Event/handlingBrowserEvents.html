@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling Browser Events</title>
+</head>
+<body>
+    <div>
+        <button id ="btn">click me</button>
+    </div>
+    <script>
+        let btn = document.getElementById("btn");
+        let x = function(val){
+            alert("hellow world")
+        };
+        let y = function(val){
+            alert("hellow world")
+        };
+        let e = function(val){
+            document.body.style.backgroundColor = "yellow"
+        };
+
+        btn.addEventListener('click', x)
+        btn.addEventListener('click', y)
+
+        let a = prompt ("enter your fav no.");
+
+        if(a == "2"){
+            btn.removeEventListener('click', x)
+        }
+    </script>
+</body>
+</html>

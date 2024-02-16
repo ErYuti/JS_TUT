@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shallow copy</title>
+</head>
+<body>
+    <script>
+        const fruits = ['mango', 'apple', 'orange'];
+        const myfruits = fruits;
+        console.log(fruits); // @32777
+        //its just taking a references of fruits 
+        //both array address are same
+        console.log(myfruits); //@32777
+
+        //when you update one array that effect to other array also...
+        //bcz they have same address ... both are are updating
+        myfruits.push('dates');
+        console.log(myfruits);
+        console.log(fruits); 
+
+
+        //so solve this problem 
+
+        const num1 = [1,2,3,4,5];
+        console.log(num1); 
+        const num2= [];
+        Object.assign(num2,num1);//old version
+       //this is a new object,so when you update in old object that is not effect in your new objects
+        console.log(num2);
+        num2.push(6);
+        //checking
+        console.log(num1); 
+        // only for new obj
+        //bcz its creating diff address
+        console.log(num2);
+
+        //only using spread from ES6
+        const name1 = ['a','b','c'];
+        const name2 = [...name1];
+        console.log(name1);
+        console.log(name2);
+        name1.push("d");
+        console.log(name1);
+        console.log(name2);
+
+        const obj1={
+            name:'yuti',
+            surname:'meher',
+            age:22
+        }
+        const obj2={...obj1};
+        console.log(obj1);
+        console.log(obj2);
+    </script>
+</body>
+</html>
