@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returning Function With Closures</title>
+</head>
+
+<body>
+    <script>
+        function parent() {
+            const c=3;
+            function add(a, b) {
+                console.log(`taking from parent fun:${c}`); //Closure (parent)c: 3
+                console.log(`Adding two value:${a + b}`);
+            }
+            return add
+        }
+        const result = parent();
+        console.log(result(2,3));
+
+    </script>
+</body>
+
+</html>

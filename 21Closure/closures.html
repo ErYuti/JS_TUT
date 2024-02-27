@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+</head>
+
+<body>
+    <script>
+        function outer() {
+            const a = 1;
+            const b = 2;
+            console.log(b);
+            function inner() {
+                console.log(a);
+                console.log(b);
+            }
+
+            return inner;
+        }
+
+        const result = outer();
+        console.dir(result);
+
+        //  Closure(outer) { a: 1, b: 2 } 
+
+        function main (num){
+            const a = num;
+            function child (){
+                console.log(a);
+            }
+            return child;
+
+        }
+        const res = main(100);
+        console.log(res);
+        console.dir(res);
+
+        //Closure (main) {a: 100}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method</title>
+</head>
+
+<body>
+    <script>
+        const methods = {
+            E: 2.718281828459045,
+            adding: function (a, b) { //method
+                return a + b;//return is imp!
+            },
+            square: function (num) {
+                return(num * num );
+            },
+            //new method in ES5
+            subtract (m,n) {
+                return(m-n);
+            },
+            cube (num){
+                return(num ** 3)
+            }
+        }
+        //adding in obj is called methods
+        console.log(methods.adding);
+        const result = methods.adding(2, 3)
+        console.log(result);
+
+        //squ
+        console.log(methods.square(2));
+
+        //sub
+        console.log(methods.subtract(2,2));
+
+        //cube
+        console.log(methods.cube(3));
+    </script>
+</body>
+
+</html>

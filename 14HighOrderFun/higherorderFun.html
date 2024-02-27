@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Function</title>
+</head>
+
+<body>
+    <script>
+        // A function that receives another function as an argument or that returns a new function or both is called Higher-order function.
+
+        // Passing Function as an argument. 
+        function message(msg) {
+            console.log(msg);
+        }
+        function sayHi() {
+            console.log('hiiiiiiiii');
+        }
+        message(sayHi());
+
+        // Functions returning another function.
+        const greet = function (name) {
+            return function (surname) {
+                console.log(`hi I am ${name} , ${surname}`);
+            }
+        }
+        let result = greet('yuti');
+        result('meher');
+
+
+        // Callback function, passed as a parameter in the higher order function
+        function callbackFunction() {
+            console.log('I am  a callback function');
+        }
+
+        // higher order function
+        function higherOrderFunction(func) {
+            console.log('I am higher order function')
+            func()
+        }
+
+        higherOrderFunction(callbackFunction);
+    </script>
+</body>
+
+</html>

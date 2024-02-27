@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <script>
+        //function Declaration
+        function mul (num){
+            return num*num
+        }
+
+        //function expression
+        const cube = function(num){
+            return num ** num
+        }
+
+        //arrow function with return
+        const squ = (num) => {
+            return num * num;
+        }
+        console.log(squ);
+        console.log(squ(2));
+
+        //arrow function without return
+        //implicit arrow function
+        //single number
+        const number = num => console.log(num);
+        console.log(number(1));
+
+        //two number
+        const add = (num1, num2) => num1 + num2;
+        console.log(add);
+        console.log(add(2, 4));
+
+        //sync with arrow function
+        setTimeout(() => {
+            console.log('hii');
+        }, 2000)
+
+        //random
+        const random = ()=> Math.random()*10;
+        console.log(random());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Filter Reduce Prcas</title>
+</head>
+
+<body>
+    <script>
+        const months = ['january', 'february', 'march', 'april', 'may', 'june', 'july'];
+       
+       
+        //map is same as for each but for each not return any value but map return value
+        const mapFunction = months.map((month,index,array) => {
+            console.log(month);
+            return month;
+        })
+        console.log(mapFunction);
+
+
+        //filter- return boolean value only 
+        //return true and false value 
+        //filter out some value only that you want to print
+        const filterFunction = months.filter((month,index,array) => {
+            console.log(month);
+            return month.length<5;//true
+        })
+        console.log(filterFunction);
+
+
+        //Reduce
+        //reduce and get into one copy only
+        //all combine and give one value
+        d
+        const num =[1,2,3,4,5,6,7,8,9];
+        const add = num.reduce((accumulator, current,index)=>{
+            // console.log(current,index);
+            console.log(accumulator,current);
+            return accumulator+current;
+        },10)
+    </script>
+</body>
+
+</html>

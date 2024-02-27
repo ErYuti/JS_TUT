@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+
+<body>
+    <script>
+        //normal
+        let a;                  // Declaration
+        a = 100;            // Assignment
+        console.log(a);  // Usage
+
+
+        //a variable can be declared after it has been used
+        console.log(num);
+        var num = 23;
+
+        //var code (global)
+        console.log(name); // undefined
+        let name = 'yuti meher';
+
+        // how interpreter sees the above code
+        let nam;
+        console.log(nam); // undefined
+        name = 'meher';
+
+        // Function scoped variable: Let’s look at how function-scoped variables are hoisted.
+        // Function scoped
+        function fun() {
+            console.log(n);
+            let n = 'yuti';
+        }
+        fun(); // Undefined
+
+        function fun2() {
+            let na = 'Meher';
+            console.log(na);
+        }
+        fun2();
+
+
+
+        fun3(); // Calling before declaration
+
+        function fun3() { // Declaring
+            console.log("Function is hoisted");
+        }
+
+        fun4() // Calling the expression
+
+        let fun4 = function () { // Declaring
+            let name = 'Meher';
+            console.log(name);
+        }
+
+        fun5() // Calling the expression
+
+        let fun5 = function() { // Declaring
+            let name1 = 'Mukul Latiyan';
+            console.log(name1);
+        }
+    </script>
+</body>
+
+</html>

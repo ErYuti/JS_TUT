@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        //array
+        const colors = ['red','yellow','green','pink','black'];
+        function colo (a){
+            console.log(a);
+        }
+        console.log(colo(colors));
+         //before Destructuring
+        const color1 = colors[0];
+        console.log(color1);
+        const color2 = colors[1];
+        console.log(color2);
+        const color3 = colors[2];
+        console.log(color3);
+
+        //using Destructuring
+        const [col1,col2,col3]=colors;
+        const [,,,col4]=colors;
+        console.log(col1);
+        console.log(col2);
+        console.log(col3);
+        console.log(col4);
+
+        //object 
+        const user = {
+            name:'yuti',
+            age:12,
+            id:905,
+            address:{
+                city:'palghar',
+                state:'maharatra',
+            },
+        }
+        //function
+        function intro (age){
+            console.log(age);
+        }
+        console.log(intro(user)); 
+
+        //before Destructuring
+        const a =user.age;
+        console.log(a);
+
+        //after Destructuring
+        const {age,name:username,address:add,id,job,} = user;
+        console.log(age);
+        console.log(username);
+        console.log(add);
+        console.log(id);
+        console.log(job);
+
+        //multi level Destructuring
+        const {address:{city}}=user;
+        console.log(city);
+    </script>
+</body>
+</html>

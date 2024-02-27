@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Parameters in ES6</title>
+</head>
+<body>
+    <script>
+        function multi (num1,num2){
+            return num1*num2;
+        }
+        console.log(multi(2,3));
+        //other value is default as a undefined
+        console.log(multi(2)); //NaN
+
+        //used default parameters as a number
+        function multi (a,b=1){
+            return a*b;
+        }
+        console.log(multi(2));
+        //anything is false convert into = 0 '',null
+        console.log(multi(3,''));
+        console.log(multi(3,null));
+
+        //rolldie 
+        function rollDie(numberofside=6){ 
+            return Math.floor(Math.random()*numberofside+1)
+        }
+        console.log(rollDie(9));
+        console.log(rollDie(4));
+        console.log(rollDie(2));
+        console.log(rollDie());
+    </script>
+</body>
+</html>

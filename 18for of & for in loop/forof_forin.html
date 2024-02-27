@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of vs for in loop</title>
+</head>
+<body>
+    <script>
+        const fruits = ['apple','banana','peach','mango'];
+         // using for loop
+        for (let i=0; i<fruits.length; i++){
+            console.log(fruits[i]);
+        }
+
+        //using for-of
+        //key is representing every value in array
+        for(key of fruits){
+            console.log(key);
+        }
+        const name='yuti meher';
+        //using for of
+        for (key of name){
+            console.log(key);
+        }
+
+        //for of can not used for for-of loop object 
+        const person ={
+            name:'yuti',
+            id:985478,
+            address:'palghar',
+            age:22,
+            city:'mumbai'
+        }
+        const personKeys = Object.keys(person);
+        console.log(personKeys);
+        const personValues = Object.values(person);
+        console.log(personValues);
+        const personEntries = Object.entries(person);
+        console.log(personEntries);
+        
+        //using for-in
+        for (key in person){
+            console.log(key,':',person[key]);
+        }
+    </script>
+</body>
+</html>

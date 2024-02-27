@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameters</title>
+</head>
+<body>
+    <script>
+        const num = [13,5,7,896,356]
+        function add (a,b,c,...nums){ //rest
+            console.log(nums);
+            console.log((a+b+c));
+            console.log('nums:',nums);
+            return 
+        }
+        console.log(add(1,2,3,...num)); //spread
+
+        //multi
+        const arr = [1,2,3];
+        function multi(...num){
+            return num.reduce((acc,curr)=>acc*curr)
+        }
+        console.log(multi(...arr));
+    </script>
+</body>
+</html>
